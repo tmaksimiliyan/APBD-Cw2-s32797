@@ -54,7 +54,7 @@ public class RentalService : IRentalService
             throw new RentalAlreadyReturnedException(rental.Id);
         }
 
-        if (returnDate < rental.DueDate)
+        if (returnDate < rental.RentalDate)
         {
             throw new ArgumentException("Return date cannot be earlier than rental date");
         }

@@ -30,7 +30,7 @@ public class ReportService : IReportService
             $"Available equipment: {availableEquipment}\n" +
             $"Borrowed equipment: {borrowedEquipment}\n" +
             $"Unavailable equipment: {unavailableEquipment}\n" +
-            $"Active rentals: {activeRentals}\n" +
-            $"Overdue rentals: {overdueRentals}\n";
+            $"Active rentals: {activeRentals.Count}\n" +
+            $"Overdue rentals: {overdueRentals.Count}\n";
     }
 }
